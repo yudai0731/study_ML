@@ -3,7 +3,9 @@ name = "py3.9-no-gpu"
 version = "0.1.0"
 description = ""
 authors = ["chama"]
-readme = "README.md"
+packages = [
+    {include = "mylib", from="/workspace"}
+]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
